@@ -88,7 +88,7 @@ gulp.task('greet',()=>console.log('Hello World~'));
 ```
 执行greet任务时，终端屏幕上会出现类似于下面的情况：
 
-![](./greet1.png)
+![](./gulp/greet1.png)
 
 图中红色警告说greet任务并没有完成，实际上是因为任务是异步执行的，并且greet任务在执行完成后并没有去告知gulp，导致gulp不知道任务已经完成了。
 
@@ -100,7 +100,7 @@ gulp.task('greet',done=>{
 ```
 gulp在执行任务时会将一个参数 **(即上面的done)** 注入到任务函数中，当我们调用done时就等价于在告知gulp该任务已经执行完毕：
 
-![](./greet2.png)
+![](./gulp/greet2.png)
 
 > 调用异步函数时是不会出现阻塞情况的，所以通常异步执行的函数要在执行完成后告知调用者执行情况，然后调用者才能根据情况来做相应的处理。
 
@@ -134,7 +134,7 @@ gulp.task('default', gulp.series('greet','bye',done=>{
     done();
 }));
 ```
-![](./series.png)
+![](./gulp/series.png)
 > 需要注意串行执行链上的每个子任务都要告知gulp自己的执行情况，如果gulp不知道子任务的执行情况就无法继续执行下一个任务。串行执行链可以很好地控制任务之间的**依赖关系**，进而形成一条依赖链。
 
 ### parallel
@@ -148,5 +148,5 @@ gulp使用parallel方法来定义一条并行执行的执行链，只需要将`s
 - SCSS编译 styles任务
 
 我们的任务链大致长这样：
-![](./chain.png)
+![](./gulp/chain.png)
 
