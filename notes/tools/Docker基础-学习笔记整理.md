@@ -1,9 +1,3 @@
----
-title: Docker基础 学习笔记整理
-date: 2019-07-02 10:13:23
-tags: Docker
----
-
 ## 安装Docker（Ubuntu）
 
 ### 使用脚本安装

@@ -1,11 +1,3 @@
----
-title: MySQL基础总结
-date: 2019-06-28 14:34:17
-tags: 
-    - MySQL
-    - 数据库
----
-
 ## MySQL命令行
 
 ### 连接到MySQL的服务器
