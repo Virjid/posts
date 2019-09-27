@@ -22,3 +22,7 @@
 |       DB        |  Tools   | Practice | Design | Big Data |
 | :-------------: | :------: | :------: | :----: | :------: |
 | :floppy_disk:  ​​ | :hammer: | :cookie: | :art:  | :cloud:  |
+
+
+
+<img src="assets/E7CAA58FE13D7D0A2376DACA21B9344D.jpg" width="350" />
